@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%-include('./inc/head')%>
+</head>
+<body>
+<%-include('./inc/nav')%>
+<section>
+    <h1>Yazılar</h1>
+    <ul>
+        <% blogs.forEach(blog => { %>
+            <li>
+                <a href="/blog/<%=blog.id%>"><%=blog.title%></a>
+            <p><%=blog.short%></p>        
+    </li>
+     <% }) %>
+        
+       
+    </ul>
+</section>
+</body>
+</html>
